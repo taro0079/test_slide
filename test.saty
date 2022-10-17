@@ -9,7 +9,7 @@ in
 document '<
     +make-title(|
     title={|\SLyDIFi; を使ってみる|};
-    author={|Taro Morita|};
+    author={|もりた|};
     date = {|2022/10/18|};
     |);
     +frame{\SATySFi;で文章を書いてみる}<
@@ -67,5 +67,11 @@ document '<
             ```
         );
       
+    >
+    +frame{まとめ}<
+      +listing{
+        * 機能は素晴らしいがまだまだ未成熟
+        * 文章をコンパイルするのは素晴らしい
+      }
     >
 >
