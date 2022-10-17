@@ -13,7 +13,7 @@ document '<
     date = {|2022/10/18|};
     |);
     +frame{\SATySFi;で文章を書いてみる}<
-        +enumerate{
+        +listing{
           * \SATySFi;は静的型付きが備わった組版処理システム
           * 柔軟で可読性が高い
           * 静的型付けによって詳細なエラー報告を実現
@@ -23,26 +23,40 @@ document '<
     >
 
     +frame{文章をコードで書いて何がいいのか}<
-        +enumerate{
+        +listing{
             * gitによるバージョン管理
             * デザインを気にしなくてもそれなりにきれいに出力できる
-            * 論文サイズでもサクサクかける（wordだと画像張りすぎて重すぎて動けん...みたいなこと連発）
+            * 論文サイズでもサクサクかける
+            ** wordだと画像張りまくるとすぐフリーズ
+            ** D論提出直前にフリーズでデータ破損は結構当たり前だった
         }
     >
 
     +frame{\SATySFi;のいいところ}<
-        +enumerate{
+        +listing{
           * Language Serverによる補完がめっちゃ効く
+          ** VSCodeもちゃんと対応してる
           * コンパイルがめっちゃ早い（？）
+          ** \LaTeX;に比べたらめっちゃ早い
         }
       
     >
+    +frame{画像も貼れる}<
+        +listing{
+          * 画像も貼れる
+        }        
+        +fig-center(include-image 200pt `fig/images.jpg`);
+      
+    >
     +frame{実際のコード}<
+        +listing{
+          * コードも貼れる
+        }
         +code(
             ```
 document '<
     +frame{\SATySFi;で文章を書いてみる}<
-        +enumerate{
+        +listing{
           * \SATySFi;は静的型付きが備わった組版処理システム
           * 柔軟で可読性が高い
           * 静的型付けによって詳細なエラー報告を実現
