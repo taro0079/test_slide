@@ -1,0 +1,57 @@
+@require: class-slydifi/theme/akasaka
+@require: figbox/figbox
+@require: enumitem/enumitem
+@require: code
+open FigBox
+
+in
+
+document '<
+    +make-title(|
+    title={|\SLyDIFi; を使ってみる|};
+    author={|Taro Morita|};
+    date = {|2022/10/18|};
+    |);
+    +frame{\SATySFi;で文章を書いてみる}<
+        +enumerate{
+          * \SATySFi;は静的型付きが備わった組版処理システム
+          * 柔軟で可読性が高い
+          * 静的型付けによって詳細なエラー報告を実現
+          * \LaTeX; + Ocamlというアイデア
+        }
+
+    >
+
+    +frame{文章をコードで書いて何がいいのか}<
+        +enumerate{
+            * gitによるバージョン管理
+            * デザインを気にしなくてもそれなりにきれいに出力できる
+            * 論文サイズでもサクサクかける（wordだと画像張りすぎて重すぎて動けん...みたいなこと連発）
+        }
+    >
+
+    +frame{\SATySFi;のいいところ}<
+        +enumerate{
+          * Language Serverによる補完がめっちゃ効く
+          * コンパイルがめっちゃ早い（？）
+        }
+      
+    >
+    +frame{実際のコード}<
+        +code(
+            ```
+document '<
+    +frame{\SATySFi;で文章を書いてみる}<
+        +enumerate{
+          * \SATySFi;は静的型付きが備わった組版処理システム
+          * 柔軟で可読性が高い
+          * 静的型付けによって詳細なエラー報告を実現
+          * \LaTeX; + Ocamlというアイデア
+        }
+    >
+>
+            ```
+        );
+      
+    >
+>
